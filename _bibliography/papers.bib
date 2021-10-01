@@ -3,70 +3,82 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
+@inproceedings{lopez2020mar,
+  title={MAR: {A} structure-based search engine for models},
+  author={L{\'o}pez, Jos{\'e} Antonio Hern{\'a}ndez and Cuadrado, Jes{\'u}s S{\'a}nchez},
+  booktitle={Proceedings of the 23rd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems},
+  pages={57--67},
+  year={2020},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
+  abbr={MoDELS},
+  pdf={http://sanchezcuadrado.es/papers/models2020-mar.pdf},
+  html={https://dl.acm.org/doi/10.1145/3365438.3410947},
   selected={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{lopez2020gen,
+  title={{T}owards the {C}haracterization of {R}ealistic {M}odel {G}enerators using {G}raph {N}eural {N}etworks},
+  author={L{\'o}pez, Jos{\'e} Antonio Hern{\'a}ndez and Cuadrado, Jes{\'u}s S{\'a}nchez},
+  booktitle={Proceedings of the 24th ACM/IEEE International Conference on Model Driven Engineering Languages and Systems},
+  year={2021},
+  bibtex_show={true},
+  abbr={MoDELS},
+  pdf={http://sanchezcuadrado.es/papers/models21-realistic-model-generators.pdf},
+  selected={true},
+  abstract={The automatic generation of software models is an important element in many software and systems engineering scenarios such as software tool certification, validation of cyber-physical systems, or benchmarking graph databases. Several model generators are nowadays available, but the topic of whether they generate realistic models has been little studied. The state-of-the-art approach to check the realistic property in software models is to rely on simple comparisons using graph metrics and statistics. This generates a bottleneck due to the compression of all the information contained in the model into a small set of metrics. Furthermore, there is a lack of interpretation in these approaches since there are no hints of why the generated models are not realistic. Therefore, in this paper, we tackle the problem of assessing how realistic a generator is by mapping it to a classification problem in which a Graph Neural Network (GNN) will be trained to distinguish between the two sets of models (real and synthetic ones). Then, to assess how realistic a generator is we perform the Classifier Two-Sample Test (C2ST). Our approach allows for interpretation of the results by inspecting the attention layer of the GNN. We use our approach to assess four state-of-the-art model generators applied to three different domains. The results show that none of the generators can be considered realistic.}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{cuadrado2020efficient,
+  title={Efficient execution of ATL model transformations using static analysis and parallelism},
+  author={Cuadrado, Jes{\'u}s S{\'a}nchez and Burgueno, Loli and Wimmer, Manuel and Vallecillo, Antonio},
+  journal={IEEE Transactions on Software Engineering},
+  year={2020},
+  publisher={IEEE},
+  bibtex_show={true},
+  abbr={TSE},
+  pdf={http://sanchezcuadrado.es/papers/a2l.tse2020.pdf},
+  html={https://ieeexplore.ieee.org/abstract/document/9146715},
+  selected={true}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{cuadrado2020verified,
+  title={A verified catalogue of OCL optimisations},
+  author={Cuadrado, Jes{\'u}s S{\'a}nchez},
+  journal={Software and Systems Modeling},
+  volume={19},
+  number={5},
+  pages={1139--1161},
+  year={2020},
+  publisher={Springer}, 
+  bibtex_show={true},
+  abbr={SoSyM},
+  pdf={http://sanchezcuadrado.es/papers/sosym-ocl-optimisations.pdf},
+  html={https://link.springer.com/article/10.1007/s10270-019-00740-1}
 }
+
+@article{lopez2021modelset,
+  title={{M}odel{S}et: {A} {D}ataset for {M}achine Learning in {M}odel-{D}riven {E}ngineering},
+  author={L{\'o}pez, Jos{\'e} Antonio Hern{\'a}ndez and C\'anovas Izquierdo, JavierLuis and Cuadrado, Jes{\'u}s S{\'a}nchez},
+  journal={Software and Systems Modeling},
+  year={2021},
+  publisher={Springer}, 
+  bibtex_show={true},
+  abbr={SoSyM},
+  pdf={http://sanchezcuadrado.es/papers/modelset.pdf},
+  html={https://link.springer.com/article/10.1008/s10270-019-00740-1}
+}
+
+@inproceedings{cuadrado2020model,
+  title={Model Finding in the EMF Ecosystem},
+  author={Cuadrado, Jes{\'u}s S{\'a}nchez and Gogolla, Martin},
+  booktitle={Proceedings of the 16th European Conference on Modelling Foundations and Applications},
+  publisher={J. Object Technol.},
+  volume={19},
+  number={2},
+  pages={10--1},
+  year={2020},
+  abbr={ECMFA},
+  pdf={http://www.jot.fm/issues/issue_2020_02/article10.pdf},
+  html={http://www.jot.fm/contents/issue_2020_02/article10.html}
+}
+

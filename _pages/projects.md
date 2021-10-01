@@ -1,11 +1,12 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: Software
+permalink: /software/
+description: Our research is backed by working software that is freely available. These are our software projects.
 nav: true
-display_categories: [work, fun]
-horizontal: false
+display_categories: [current, old]
+horizontal: true
+importance: 3
 ---
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}
