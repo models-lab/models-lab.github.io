@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ModelSet
-description: ModelSet is a dataset of software models.
+description: A dataset of more than 5000 Ecore models and 5000 UML models software models, manually labelled with its category and additional tags.
 img: /assets/img/modelset.jpg
 redirect: https://modelset.github.io
 importance: 2

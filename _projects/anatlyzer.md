@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AnATLyzer
-description: An IDE for model transformations.
+description: An IDE for model transformations. It provides static analysis facilities based on constraint solving to detect a wide range of errors. 
 img: /assets/img/anatlyzer.png
 redirect: http://anatlyzer.github.io
 importance: 3
