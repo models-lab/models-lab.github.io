@@ -66,20 +66,18 @@ Organize your courses by years, topics, or universities, however you like!
                     <h5 class="card-title">José Antonio Hernández</h5>
                     </a>
                     <p class="card-text">
-                        I'm PhD student...
+                        José Antonio Hernández López is a predoctoral researcher at the University of Murcia. He obtained a BSc in Mathematics, a BSc in Computer Science and a MSc in Big Data from the University of Murcia. Currently, he is enrolled in a PhD program in Computer Science supervised by Jesús Sánchez Cuadrado. His research interests include model-driven engineering (MDE), recommender systems and machine learning for software engineering.
+
                     </p>
-                    <a href="mailto:jesusc@um.es" class="card-link"><i class="fas fa-envelope"></i></a>
-                     <a href="tel:+34 868 88 7981" class="card-link"><i class="fas fa-phone"></i></a>
-                    <a href="https://orcid.org/0000-0001-9755-5616" class="card-link" target="_blank"><i class="fab fa-orcid"></i></a>
+                    <a href="mailto:joseantonio.hernandez6@um.es" class="card-link"><i class="fas fa-envelope"></i></a>
                     
                     
-                        <a href="https://twitter.com/sanchezcuadrado" class="card-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://twitter.com/antolin_hl" class="card-link" target="_blank"><i class="fab fa-twitter"></i></a>
                     
                     
-                        <a href="https://github.com/jesusc" class="card-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/Antolin1" class="card-link" target="_blank"><i class="fab fa-github"></i></a>
                     
                     
-                        <a href="https://sanchezcuadrado.es" class="card-link" target="_blank"><i class="fas fa-globe"></i></a>
                     
 					<!--
                     <p class="card-text">
