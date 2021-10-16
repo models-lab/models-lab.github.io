@@ -17,6 +17,10 @@ I obtained a BSc in Mathematics, a BSc in Computer Science and a MSc in Big Data
 * José Antonio Hernández López, and Jesús Sánchez Cuadrado. 2021. “Towards the Characterization of Realistic Model Generators Using Graph Neural Networks.” In *Proceedings of the 24th Acm/Ieee International Conference on Model Driven Engineering Languages and Systems*.
 * José Antonio Hernández López, and Jesús Sánchez Cuadrado. 2020. “MAR: A Structure-Based Search Engine for Models.” In *Proceedings of the 23rd Acm/Ieee International Conference on Model Driven Engineering Languages and Systems*, 57–67.
 
+## Awards
+
+* ACM Distinguished Paper Award at IEEE/ACM MODELS conference of 2021.
+
 ## Education
 
 * MsC in Big Data, Universidad de Murcia. 2019-2020.
