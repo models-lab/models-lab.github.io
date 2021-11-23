@@ -40,12 +40,12 @@ We have three main themes.
 3. Machine learning applied to modelling
 
 
+Our work revolves around these topics. We like to devise practical
+solutions to problems related to software engineering, usually by building
+tools. If you are interested in these topics and want to collaborate or work with us, do not hesitate to contact us. 
 <!--
-We are a Biological Physics lab in the Department of Physics at UIUC. We study physical principles underlying molecular interactions and functions inside cells. Currently, our focus is how gene expression machines work together in the cellular context. We develop new methodologies based on molecular, optical, and computational approaches and ask critical molecule-level questions that matter for living cells.
--->
-
 We are looking for highly energetic and motivated graduate students with a background in computer science and mathematics.
-
+-->
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.

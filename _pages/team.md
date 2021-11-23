@@ -25,7 +25,7 @@ Organize your courses by years, topics, or universities, however you like!
                     <h5 class="card-title">Jesús Sánchez Cuadrado</h5>
                     </a>
                     <p class="card-text">
-                        I'm specialised in model transformations and domain-specific languages. I'm responsible of the team, meaning that for any mistake that we do I'm the reponsible.
+                        I'm a Ramón y Cajal researcher at Universidad de Murcia. Previously, I was Assistant Professor at Universidad Autónoma de Madrid. I'm specialised in model transformations and domain-specific languages. I'm the responsible of the team, that is, whenever anything bad happens, I'm usually responsible.
                     </p>
                     <a href="mailto:jesusc@um.es" class="card-link"><i class="fas fa-envelope"></i></a>
                      <a href="tel:+34 868 88 7981" class="card-link"><i class="fas fa-phone"></i></a>
