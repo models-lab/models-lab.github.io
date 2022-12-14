@@ -7,6 +7,12 @@ updates.
 
 To deploy the changes `./bin/deploy --src dev`.
 
+## To check locally
+
+```
+bundle exec jekyll serve
+```
+
 ## New announcements
 
 * Add a file like `_news/announcement_4.md` 
