@@ -67,16 +67,57 @@ Organize your courses by years, topics, or universities, however you like!
                     </a>
                     <p class="card-text">
                         José Antonio Hernández López is a predoctoral researcher at the University of Murcia. He obtained a BSc in Mathematics, a BSc in Computer Science and a MSc in Big Data from the University of Murcia. Currently, he is enrolled in a PhD program in Computer Science supervised by Jesús Sánchez Cuadrado. His research interests include model-driven engineering (MDE), recommender systems and machine learning for software engineering.
-
                     </p>
                     <a href="mailto:joseantonio.hernandez6@um.es" class="card-link"><i class="fas fa-envelope"></i></a>
                     
-                    
+                
                         <a href="https://twitter.com/antolin_hl" class="card-link" target="_blank"><i class="fab fa-twitter"></i></a>
                     
                     
                         <a href="https://github.com/Antolin1" class="card-link" target="_blank"><i class="fab fa-github"></i></a>
                     
+                    
+                    
+					<!--
+                    <p class="card-text">
+                        <small class="test-muted"><i class="fas fa-thumbtack"></i> Hochschulstr. 10,  64289 Darmstadt, Germany
+</small>
+                    </p>
+					-->
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<div>
+<p></p>
+</div>
+
+<div class="card hoverable">
+        <div class="row no-gutters">
+            <div class="col-sm-4 col-md-3">
+                <img src="/assets/img/carlos.png" alt="Carlos Durá Costa" />
+            </div>
+            <div class="team col-sm-8 col-md-9">
+                <div class="card-body">
+                    <a href="/members/carlosdura">
+                    <h5 class="card-title">Carlos Durá Costa</h5>
+                    </a>
+                    <p class="card-text">
+                        Carlos Durá Costa is a predoctoral researcher at the University of Murcia. He obtained a BSc in Mathematics, a BSc in Computer Science and a MSc in Big Data from the University of Murcia. 
+						<!--
+						Currently, he is enrolled in a PhD program in Computer Science supervised by Jesús Sánchez Cuadrado. 
+						-->
+                    </p>
+                    <a href="mailto:carlos.durac@um.es" class="card-link"><i class="fas fa-envelope"></i></a>
+                    
+					<!--
+                        <a href="https://twitter.com/antolin_hl" class="card-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    
+                    
+                        <a href="https://github.com/Antolin1" class="card-link" target="_blank"><i class="fab fa-github"></i></a>
+					-->
                     
                     
 					<!--
