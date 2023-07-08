@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Models & Languages  Lab
+
+
+</title>
+<meta name="description" content="A research team interested in models and languages. 
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<!--
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+-->
+
+
+
+<link rel="shortcut icon" type="image/png" href="/assets/img/logo-small.png" >
+
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="/">
+
+<!-- JQuery -->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+<!-- Theming-->
+
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTCT5KCNQV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-WTCT5KCNQV');
+</script>
+
+
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/">
+              Home
+              
+                <span class="sr-only">(current)</span>
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/blog/">
+              Blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                Publications
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/team/">
+                Team
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/software/">
+                Software
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/contact/">
+                Contact
+                
+              </a>
+          </li>
+          
+          
+          
+          
+            <div class="toggle-container">
+              <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">
+     <span class="font-weight-bold">Models &amp; Languages</span>  Lab
+    </h1>
+     <p class="desc">Dpto. de Informática y Sistemas. Facultad de Informática. Universidad de Murcia.</p>
+  </header>
+
+  <article>
+    
+    <div class="profile float-right">
+      
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/logo.png">
+      
+      
+    </div>
+    
+
+    <div class="clearfix">
+      <blockquote style="border-left: none">
+  <p><i class="fas fa-quote-left"></i>
+All models are wrong, but some are useful.
+<i class="fas fa-quote-right"></i><br>
+</p>
+</blockquote>
+
+<p>We are a (small) research team focused on Software Engineering topics.
+In particular, we seek to improve software development by
+using models (as in UML models, but also ML models) and 
+Domain-Specific Languages (DSLs).</p>
+
+<p>We have three main themes.</p>
+
+<ol>
+  <li>
+    <p>Model transformations</p>
+  </li>
+  <li>
+    <p>Domain-specific languages</p>
+  </li>
+  <li>
+    <p>Machine learning applied to modelling</p>
+  </li>
+</ol>
+
+<p>Our work revolves around these topics. We like to devise practical
+solutions to problems related to software engineering, usually by building
+tools. If you are interested in these topics and want to collaborate or work with us, do not hesitate to contact us. 
+<!--
+We are looking for highly energetic and motivated graduate students with a background in computer science and mathematics.
+--></p>
+
+<!--
+Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+
+Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+-->
+
+    </div>
+
+    
+      <div class="news">
+  <h2>News</h2>
+  
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+      
+      
+        <tr>
+          <th scope="row">Jul 9, 2023</th>
+          <td>
+            
+              Our work <a href="http://sanchezcuadrado.es/papers/models23-worde4mde.pdf">Word Embeddings for Model-Driven Engineering</a> has been accepted at MODELS’23 <img class="emoji" title=":confetti_ball:" alt=":confetti_ball:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f38a.png" height="20" width="20">
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Dec 14, 2022</th>
+          <td>
+            
+              Our work about <a href="http://sanchezcuadrado.es/papers/Realistic-Models-TSE-2022.pdf">Generating structurally realistic models with deep autoregressive networks</a> has been published at IEEE TSE <img class="emoji" title=":tada:" alt=":tada:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png" height="20" width="20">
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Oct 21, 2022</th>
+          <td>
+            
+              We will give three talks at MoDELS’22, all in the session “AI for/with MDE”. Checkout the <a href="https://conf.researchr.org/program/models-2022/program-models-2022/">conference program</a> <img class="emoji" title=":mega:" alt=":mega:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4e3.png" height="20" width="20">
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Jul 21, 2022</th>
+          <td>
+            
+              Our paper <a href="https://arxiv.org/pdf/2206.11719.pdf">AST-Probe: Recovering abstract syntax trees from hidden
+representations of pre-trained language models</a> has been accepted at ASE’22 <img class="emoji" title=":pencil:" alt=":pencil:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dd.png" height="20" width="20">
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Jul 13, 2022</th>
+          <td>
+            
+              Our paper <a href="http://sanchezcuadrado.es/papers/models22-classification.pdf">Machine learning methods for model classification: A comparative study</a> has been accepted at MODELS’22 <img class="emoji" title=":pencil:" alt=":pencil:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dd.png" height="20" width="20">
+
+            
+          </td>
+        </tr>
+      
+      </table>
+    </div>
+  
+</div>
+
+    
+
+    
+      <div class="publications">
+  <h2>Selected publications</h2>
+  <ol class="bibliography">
+<li>
+<div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">ASE</abbr>
+    
+  
+  </div>
+
+  <div id="lopez2022ase" class="col-sm-8">
+    
+      <div class="title">AST-Probe: Recovering abstract syntax trees from hidden
+representations of pre-trained language models</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  López, José Antonio Hernández,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Weyssow, Martin,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Cuadrado, Jesús Sánchez,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Sahraoui, Houari
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering</em>
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+    
+      
+      <a href="https://arxiv.org/pdf/2206.11719.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">lopez2022ase</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{AST-Probe: Recovering abstract syntax trees from hidden
+  representations of pre-trained language models}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{L{\'o}pez, Jos{\'e} Antonio Hern{\'a}ndez and Weyssow, Martin and Cuadrado, Cuadrado, Jes{\'u}s S{\'a}nchez and Sahraoui, Houari}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{ASE}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://arxiv.org/pdf/2206.11719.pdf}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">MoDELS</abbr>
+    
+  
+  </div>
+
+  <div id="lopez2020mar" class="col-sm-8">
+    
+      <div class="title">MAR: A structure-based search engine for models</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  López, José Antonio Hernández,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Cuadrado, Jesús Sánchez
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Proceedings of the 23rd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems</em>
+      
+      
+        2020
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="https://dl.acm.org/doi/10.1145/3365438.3410947" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
+    
+    
+      
+      <a href="http://sanchezcuadrado.es/papers/models2020-mar.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">lopez2020mar</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{MAR: {A} structure-based search engine for models}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{L{\'o}pez, Jos{\'e} Antonio Hern{\'a}ndez and Cuadrado, Cuadrado, Jes{\'u}s S{\'a}nchez}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 23rd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{57--67}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{MoDELS}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{http://sanchezcuadrado.es/papers/models2020-mar.pdf}</span><span class="p">,</span>
+  <span class="na">html</span> <span class="p">=</span> <span class="s">{https://dl.acm.org/doi/10.1145/3365438.3410947}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">MoDELS</abbr>
+    
+  
+  </div>
+
+  <div id="lopez2020gen" class="col-sm-8">
+    
+      <div class="title">Towards the Characterization of Realistic Model Generators using Graph Neural Networks</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  López, José Antonio Hernández,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Cuadrado, Jesús Sánchez
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Proceedings of the 24th ACM/IEEE International Conference on Model Driven Engineering Languages and Systems</em>
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+    
+      
+      <a href="http://sanchezcuadrado.es/papers/models21-realistic-model-generators.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>The automatic generation of software models is an important element in many software and systems engineering scenarios such as software tool certification, validation of cyber-physical systems, or benchmarking graph databases. Several model generators are nowadays available, but the topic of whether they generate realistic models has been little studied. The state-of-the-art approach to check the realistic property in software models is to rely on simple comparisons using graph metrics and statistics. This generates a bottleneck due to the compression of all the information contained in the model into a small set of metrics. Furthermore, there is a lack of interpretation in these approaches since there are no hints of why the generated models are not realistic. Therefore, in this paper, we tackle the problem of assessing how realistic a generator is by mapping it to a classification problem in which a Graph Neural Network (GNN) will be trained to distinguish between the two sets of models (real and synthetic ones). Then, to assess how realistic a generator is we perform the Classifier Two-Sample Test (C2ST). Our approach allows for interpretation of the results by inspecting the attention layer of the GNN. We use our approach to assess four state-of-the-art model generators applied to three different domains. The results show that none of the generators can be considered realistic.</p>
+    </div>
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">lopez2020gen</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{T}owards the {C}haracterization of {R}ealistic {M}odel {G}enerators using {G}raph {N}eural {N}etworks}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{L{\'o}pez, Jos{\'e} Antonio Hern{\'a}ndez and Cuadrado, Cuadrado, Jes{\'u}s S{\'a}nchez}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 24th ACM/IEEE International Conference on Model Driven Engineering Languages and Systems}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{MoDELS}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{http://sanchezcuadrado.es/papers/models21-realistic-model-generators.pdf}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">TSE</abbr>
+    
+  
+  </div>
+
+  <div id="lopez2022realistic" class="col-sm-8">
+    
+      <div class="title">Generating structurally realistic models with deep autoregressive networks</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  López, José Antonio Hernández,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Cuadrado, Jesús Sánchez
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>IEEE Transactions on Software Engineering</em>
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="https://ieeexplore.ieee.org/document/9982379" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
+    
+    
+      
+      <a href="http://sanchezcuadrado.es/papers/Realistic-Models-TSE-2022.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">lopez2022realistic</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Generating structurally realistic models with deep autoregressive networks}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{L{\'o}pez, Jos{\'e} Antonio Hern{\'a}ndez and Cuadrado, Cuadrado, Jes{\'u}s S{\'a}nchez}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Transactions on Software Engineering}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{IEEE}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{TSE}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{http://sanchezcuadrado.es/papers/Realistic-Models-TSE-2022.pdf}</span><span class="p">,</span>
+  <span class="na">html</span> <span class="p">=</span> <span class="s">{https://ieeexplore.ieee.org/document/9982379}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">TSE</abbr>
+    
+  
+  </div>
+
+  <div id="cuadrado2020efficient" class="col-sm-8">
+    
+      <div class="title">Efficient execution of ATL model transformations using static analysis and parallelism</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Cuadrado, Jesús Sánchez,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Burgueno, Loli,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Wimmer, Manuel,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Vallecillo, Antonio
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>IEEE Transactions on Software Engineering</em>
+      
+      
+        2020
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="https://ieeexplore.ieee.org/abstract/document/9146715" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
+    
+    
+      
+      <a href="http://sanchezcuadrado.es/papers/a2l.tse2020.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+
+    <!-- Hidden bibtex block -->
+    
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">cuadrado2020efficient</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Efficient execution of ATL model transformations using static analysis and parallelism}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Cuadrado, Jes{\'u}s S{\'a}nchez and Burgueno, Loli and Wimmer, Manuel and Vallecillo, Antonio}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Transactions on Software Engineering}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{IEEE}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{TSE}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{http://sanchezcuadrado.es/papers/a2l.tse2020.pdf}</span><span class="p">,</span>
+  <span class="na">html</span> <span class="p">=</span> <span class="s">{https://ieeexplore.ieee.org/abstract/document/9146715}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+    
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+    
+
+    
+    <div class="social">
+      <div class="contact-icons">
+        <a href="mailto:%6A%65%73%75%73%63@%75%6D.%65%73"><i class="fas fa-envelope"></i></a>
+
+
+
+
+<a href="https://github.com/models-lab" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+
+<a href="https://twitter.com/jesusc" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="contact-note"></div>
+    </div>
+    
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    © Copyright 2023 Models &amp; Languages  Lab.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+    
+    Last updated: July 09, 2023.
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+</html>
