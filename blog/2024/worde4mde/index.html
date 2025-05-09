@@ -11,7 +11,7 @@
   Models & Languages  Lab
 
 
-  | blog
+  | WordE4MDE - Word Embeddings for MDE
 
 </title>
 <meta name="description" content="A research team interested in models and languages. 
@@ -44,7 +44,7 @@
 
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/blog/2024/worde4mde/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -122,14 +122,10 @@
             <a class="nav-link" href="/blog/">
               Blog
               
-              <span class="sr-only">(current)</span>
-              
             </a>
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -209,32 +205,83 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
 
-  <div class="header-bar">
-    <h1>Models & Languages blog</h1>
-    <h2></h2>
-  </div>
+<div class="post">
 
+  <header class="post-header">
+    <h1 class="post-title">WordE4MDE - Word Embeddings for MDE</h1>
+    <p class="post-meta">May 8, 2024 • Jesús Sánchez Cuadrado</p>
+  </header>
 
-  <ul class="post-list">
+  <article class="post-content">
+    <p>In natural language processing, word embeddings are a foundational tool. They transform words into numeric vectors that capture semantic meaning. These vector representations allow machine learning models to process language in a way that reflects relationships and context. 
+There are common embeddings like Word2Vec and GloVe, which are trained on general corpora such as news articles or Wikipedia. However, the vocabularies 
+of these models don’t understand MDE-specific terms. As a concrete example, term statechart does not belong to the vocabulary of the GloVe embeddings and thus
+we cannot compute its representation. In the same line, The term state does belong to the GloVe vocabulary, but the three most similar terms according to this embedding are federal, states, and government, which does not reflect the intended semantic in the MDE domain.</p>
+
+<p>To address this gap, we have built introduced <a href="https://github.com/models-lab/worde4mde">WordE4MDE</a>, a collection of word embeddings specifically trained on MDE-focused texts. The goal of the WordE4MDE embeddings is to capture the semantics of modelling-specific terminology more effectively.</p>
+
+<p>The development of the embeddings is described in <a href="https://dl.acm.org/doi/abs/10.1109/MODELS58315.2023.00036">Word Embeddings for Model-Driven Engineering</a>
+and <a href="https://link.springer.com/article/10.1007/s10270-024-01250-5">Experimenting with modeling-specific word embeddings</a>. This post is intended to explain 
+some technical details about how to install and use them in practice.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>To install the latest version of WordE4MDE from pip, run the following:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>worde4mde
+</code></pre></div></div>
+
+<h2 id="use">Use</h2>
+
+<p>The library simplify the loading of the different models trained as part of WordE4MDE. In particular, the following three main models are available:</p>
+<ul>
+  <li><strong>sgram-mde</strong>: A word2vec model trained with modeling texts. It is the smaller model but performs similarly to the others.</li>
+  <li><strong>sgram-mde-so</strong>. A similar model but trained also with posts from StackOverlfow.</li>
+  <li><strong>glove-mde</strong>: A GloVe model trained with modeling texts. Also a small model.</li>
+  <li><strong>fasttext-mde</strong>: A <a href="https://fasttext.cc/">FastText</a> model which solves the out-of-vocabulary problem by including subword information. This model is much larger than the others (~2GB).</li>
+  <li><strong>fasttext-mde-so</strong>: A similar model but trained also with posts from StackOverflow.</li>
+</ul>
+
+<p>Loading a model is very simple using the <code class="language-plaintext highlighter-rouge">load_embeddings</code> function, which takes care of downloading the model and storing it in a the <code class="language-plaintext highlighter-rouge">.worde4mde</code> folder in the user home.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">worde4mde</span>
+
+<span class="n">model_id</span> <span class="o">=</span> <span class="s">'sgram-mde'</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">worde4mde</span><span class="p">.</span><span class="nf">load_embeddings</span><span class="p">(</span><span class="n">embedding_model</span><span class="o">=</span><span class="n">model_id</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="computing-word-similarities">Computing word similarities</h3>
+
+<p>As a simple example of using the model, let’s build a function to compute the words that are most similar to a given one.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">similar_words_to</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">term</span><span class="p">,</span> <span class="n">topn</span> <span class="o">=</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="s">"Returns the top n most similar words using gensim facilities"</span>
     
-      <li>
-        <h3><a class="post-title" href="/blog/2024/worde4mde/">WordE4MDE - Word Embeddings for MDE</a></h3>
-        <p class="post-meta">May 8, 2024</p>
-        <p>WordE4MDE is a set of embeddings, word embeddings and contextual embeddings, which can be used to in Machine Learning pipelines applied to software modeling.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/modelset/">ModelSet - A dataset of software models for ML</a></h3>
-        <p class="post-meta">November 19, 2021</p>
-        <p>ModelSet is a dataset of software models intended to foster the application of ML techniques to improve modelling. This article describes ModelSet and how to use for building a classifier which infers the category of a given meta-model.</p>
-      </li>
-    
-  </ul>
+    <span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">similar</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="nf">most_similar</span><span class="p">(</span><span class="n">positive</span><span class="o">=</span><span class="p">[</span><span class="n">term</span><span class="p">],</span> <span class="n">topn</span> <span class="o">=</span> <span class="n">topn</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">similar</span><span class="p">:</span>
+       <span class="n">words</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">words</span>
+
+<span class="nf">similar_words_to</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="s">'gmf'</span><span class="p">,</span> <span class="n">topn</span> <span class="o">=</span> <span class="mi">6</span><span class="p">)</span>
+
+<span class="c1"># If the model is FastText, then it has to be model.wv to pass a gensim mode
+</span>
+</code></pre></div></div>
+
+<p>The result of computing the similarities is the following list: <code class="language-plaintext highlighter-rouge">eugenia, gef, emf, sirius, eclipse, graphiti, editor</code> which reflects quite well the 
+semantics of the GMF: a tool for building editors, based on EMF similar to other editors like Eugenia (which is based on GMF), GEF (GMF is based on GEF).</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>The WordE4MDE embeddings were designed not just as a proof of concept, but as a practical tool for advancing Model-Driven Engineering (MDE) tools and machine learning pipelines. We foresee its use in several scenarios like semantic model repository search (e.g., with a vector database), model comparison based on
+computing word similarities, building a RAG for a modeling project, for fine-tuning classification models, etc. We hope that WordE4MDE is a useful tool for the modeling community.</p>
+
+  </article>
 
   
-
 
 </div>
 
