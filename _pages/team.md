@@ -55,6 +55,8 @@ Organize your courses by years, topics, or universities, however you like!
 <p></p>
 </div>
 
+
+
 <div class="card hoverable">
         <div class="row no-gutters">
             <div class="col-sm-4 col-md-3">
@@ -94,3 +96,21 @@ Organize your courses by years, topics, or universities, however you like!
 <p></p>
 </div>
 
+
+<div class="card hoverable">
+        <div class="row no-gutters">
+            <div class="col-sm-4 col-md-3">
+                <img src="/assets/img/dsevilla.jpeg" class="img-fluid" alt="Diego Sevilla Ruiz" />
+            </div>
+            <div class="team col-sm-8 col-md-9">
+                <div class="card-body">
+                    <h5 class="card-title">Diego Sevilla Ruiz</h5>
+                    <p class="card-text">
+                        Diego Sevilla Ruiz is an Associate Professor at the University of Murcia, where he obtained his degrees in Computer Engineering and his PhD. His research interests include model-driven data engineering, NoSQL and multi-model databases, schema inference and evolution, distributed systems, and software testing. He has contributed to techniques and tools for database schema inference and evolution, including U-Schema and SkiQL.
+                    </p>
+                    <a href="mailto:dsevilla@um.es" class="card-link"><i class="fas fa-envelope"></i></a>
+                    <a href="https://orcid.org/0000-0001-9313-008X" class="card-link" target="_blank"><i class="fab fa-orcid"></i></a>
+                </div>
+            </div>
+        </div>
+</div>
